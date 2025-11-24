@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autocom Terminal v1.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- CRT Overlay Effekte -->
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+
+    <div class="terminal-container">
+        <!-- Header -->
+        <header class="terminal-header">
+            <h1>
+                <span class="glow">Autocom</span>
+                <span class="beta-bubble">beta</span>
+            </h1>
+            <nav class="nav">
+                <a href="index.html">start</a> •
+                <a href="terminal.html" class="active">terminal</a> •
+                <a href="dashboard.html">dashboard</a>
+            </nav>
+        </header>
+
+        <!-- Terminal Output -->
+        <div id="terminal-output" class="terminal-output"></div>
+
+        <!-- Eingabezeile -->
+        <div class="terminal-input-line">
+            <span id="prompt">guest@localhost:~$</span>
+            <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false" />
+        </div>
+
+        <!-- Footer -->
+        <footer class="terminal-footer">
+            2025 Terminal Projekt von Benjamin Koch • <a href="https://www.benjaminkoch.de" target="_blank">www.benjaminkoch.de</a>
+        </footer>
+    </div>
+
+    <script src="terminal.js"></script>
+</body>
+
+</html>
